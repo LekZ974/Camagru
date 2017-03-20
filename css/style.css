@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
-header {
-    font-family: "Lato", sans-serif;
+body {
+    font-family: 'Lato';
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: 'Lato';
+    text-align: center;
+    background-color: #d8861c;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:hover{
+    color: royalblue;
+    transition: 1s;
 }
 
 #footer{
@@ -69,7 +87,7 @@ header {
 
 .containerConnect {
     position: fixed;
-    top:1em;
+    top:0.6em;
     right:1em;
     display: inline-block;
     cursor: pointer;
@@ -79,7 +97,7 @@ header {
 .b1, .b2, .b3, .b4 {
     width: 35px;
     height: 5px;
-    background-color: limegreen;
+    background-color: royalblue;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -193,6 +211,18 @@ button:hover span:after {
     transform: translateX(-50%);
 }
 
+.stream {
+    float: left;
+    width: 307px;
+    margin: 1em;
+}
+
+.screen {
+    float: right;
+    width: 307px;
+    margin: 1em;
+}
+
 video {
     width: 307px;
     height: 250px;
@@ -200,7 +230,7 @@ video {
     border: 1px solid #ccc;
 }
 
-.camagru button {
+.stream button {
     position: relative;
     width: 8em;
     border-radius: 1em;
@@ -244,4 +274,25 @@ video {
 
 .invert {
     -webkit-filter: invert(75%);
+}
+
+/*GALLERIE*/
+.userGallerie {
+    float: left;
+    position: relative;
+    width: 45%;
+    margin: 1em;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.globalGallerie {
+    float: right;
+    position: relative;
+    width: 45%;
+    margin: 1em;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f1f1;
 }
